@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./freepik__adjust__16044.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.162);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input, textarea, button {
+    width: 35%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+    overflow-y: auto; /* Prevents overflow from extending beyond box */
+    word-wrap: break-word; /* Ensures text wraps within the textarea */
+}
+
+input, textarea {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.note {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 15px;
+    width: 300px;
+    height: auto;
+    min-height: 120px; /* Ensures the note has enough height */
+    max-height: 300px; /* Maximum height for notes */
+    overflow: hidden; /* Hides anything that overflows */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.note p {
+    word-wrap: break-word; /* Ensures long words break and wrap inside the box */
+    overflow: hidden; /* Prevents overflow beyond the note box */
+    text-overflow: ellipsis; /* Adds ellipsis for long text that overflows */
+    max-height: 100px; /* Optional: Adjust this depending on the content's visibility */
+}
+
+.note:hover {
+    transform: translateY(-5px);
+}
+
+.note button {
+    margin-top: 10px;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Increase blur effect as user scrolls */
+@keyframes increaseBlur {
+    from { backdrop-filter: blur(10px); }
+    to { backdrop-filter: blur(20px); }
+}
+
+.scroll-blur {
+    animation: increaseBlur 1s forwards;
+}
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./freepik__adjust__16044.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.162);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input, textarea, button {
+    width: 35%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input, textarea {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.note {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 15px;
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.note:hover {
+    transform: translateY(-5px);
+}
+
+.note button {
+    margin-top: 10px;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Increase blur effect as user scrolls */
+/* @keyframes increaseBlur {
+    from { backdrop-filter: blur(10px); }
+    to { backdrop-filter: blur(20px); }
+}
+
+.scroll-blur {
+    animation: increaseBlur 1s forwards;
+} */ 
+
+
+
