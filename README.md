@@ -1,6 +1,6 @@
 # 📝 Notes App (MERN Stack)
 
-A full-stack **Notes App** built using **MongoDB, Express, React, and Node.js (MERN)**.  
+A full-stack **Notes App** built using **HTML,CSS,JS, MongoDB, Express, and Node.js**.  
 This app allows users to create, read, update, and delete notes with a clean frontend and a RESTful backend.
 
 ---
@@ -10,8 +10,13 @@ This app allows users to create, read, update, and delete notes with a clean fro
 - 📖 View all notes  
 - 🖊 Edit notes  
 - ❌ Delete notes  
-- 💾 Data persistence with MongoDB  
-- ⚡ Live API + React frontend  
+- 💾 Data persistence with MongoDB
+
+
+FRONTEND: 
+    HTML , CSS , JS
+BACKEND:
+    NODE , EXPRESS , MONGODB
 
 ---
 
@@ -48,11 +53,5 @@ node server.js
 ```
 cd ../frontend
 ```
-```
-npm install
-```
-```
-npm start
-```
-
+OPEN HTML PAGE USING LIVE SERVER
 
