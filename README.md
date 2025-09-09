@@ -20,6 +20,9 @@ BACKEND:
 
 ---
 
+DEMO..
+https://vishnu-s2608.github.io/NOTES-APP/
+
 ## 🚀 Quick Start (Backend + Frontend)
 
 Run the following commands step by step in your terminal:
